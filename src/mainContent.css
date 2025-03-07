@@ -1,6 +1,9 @@
 :root {
-  --mainTheme-color: #242832;
   --gray-color: #666c78;
+  --grayLight-color: #666c78d2;
+  --mainTheme-color: #242832;
+  --vanilla-color: #eed9c4;
+  --darkBlue-color: #293146ec;
 }
 
 .mainSectionContainer {
@@ -18,7 +21,7 @@
 .logoWrapper {
   height: 60%;
 
-  background-color: var(--mainTheme-color);
+  background-color: var(--darkBlue-color);
 
   display: flex;
   justify-content: center;
@@ -26,8 +29,6 @@
 }
 
 .logoContainer {
-  background-color: var(--gray-color);
-
   height: 150px;
   width: 350px;
 }

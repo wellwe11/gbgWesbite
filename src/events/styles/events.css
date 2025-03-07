@@ -1,0 +1,21 @@
+.eventsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  height: fit-content;
+
+  background-color: var(--gray-color);
+}
+
+.eventsWrapper {
+}
+
+.uniqueEventWrapper {
+  display: flex;
+
+  background-color: orange;
+
+  margin: 10px;
+}

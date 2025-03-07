@@ -1,11 +1,3 @@
-:root {
-  --gray-color: #666c78;
-  --grayLight-color: #666c78c4;
-  --mainTheme-color: #242832;
-  --vanilla-color: #eed9c4;
-  --darkBlue-color: #293146ec;
-}
-
 .mainButtonsContainer {
   width: 100vw;
   height: 15%;
@@ -27,8 +19,11 @@
   overflow: hidden;
 }
 
+.buttonActive {
+  background-color: var(--darkBlue-color) !important;
+}
+
 .mainButtonStyle {
-  margin-top: 10px;
   height: 50px;
   width: 140px;
 
@@ -36,6 +31,7 @@
 
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   background-color: var(--gray-color);
+  transition: background-color 0.3s ease-out;
 
   border-radius: 40px;
   overflow: hidden;
