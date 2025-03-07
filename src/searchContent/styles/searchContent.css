@@ -1,0 +1,117 @@
+:root {
+  --mainTheme-color: #242832;
+  --gray-color: #666c78;
+}
+
+.searchBarWrapper {
+  height: 10%;
+  background-color: var(--gray-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchBarContentContainer {
+  height: 40px;
+
+  background-color: var(--gray-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchBarInnerContainer {
+  height: 80%;
+  min-width: 600px;
+  max-width: 700px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.searchBarIconWrapper,
+.searchBarSearchContentWrapper,
+.searchBarCancelWrapper {
+}
+
+.searchBarIconWrapper {
+  height: 33px;
+  width: 100px;
+  align-self: center;
+
+  display: flex;
+
+  align-items: center;
+
+  position: absolute;
+
+  transition: left 0.5s cubic-bezier(0.91, 0.74, 0.05, 1), visibility 0.3s ease;
+}
+
+.searchIcon {
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 3px;
+}
+
+.searchIcon path {
+  fill: var(--gray-color);
+}
+
+.searchBarSearchContentWrapper {
+  background-color: gainsboro;
+  width: 70%;
+
+  transition: border-radius 0.4s ease, width 0.2s ease-in-out;
+
+  border-radius: 3px;
+
+  z-index: 1;
+
+  outline: 10px solid var(--gray-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchBarInput {
+  width: 90%;
+  height: 90%;
+
+  background-color: gainsboro;
+  border: none;
+  outline: none;
+  color: black;
+
+  margin-left: 10px;
+}
+
+.searchBarCancelWrapper {
+  width: 10%;
+
+  background-color: gainsboro;
+}
+
+.searchBarIconWrapper:hover {
+  cursor: pointer;
+}
+
+.displaySearchIcon {
+  background-color: var(--mainTheme-color);
+  border-radius: 3px;
+}
+
+.searchBarContentWrapperFocused {
+  width: 80%;
+
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+  cursor: text;
+}
