@@ -2,14 +2,18 @@ import "./styles/events.css";
 
 export default function Events({ activeTab }) {
   const tempEvents = [
-    "Michael Jacksson wtf so cool",
-    "The lonely island ????",
-    "Rögglefanterna",
-    "1",
-    "2",
-    "3",
-    "4",
-    "5",
+    {
+      artistName: "Michael Jacksson wtf so cool",
+      genre: "Pop",
+      liveCity: "Trolhhättan omg",
+      date: "2025/03/01",
+    },
+    {
+      artistName: "david guetta :O",
+      genre: "techno",
+      liveCity: "Trolhhättan igen wtf???",
+      date: "2025/05/05",
+    },
   ];
 
   return (
@@ -18,7 +22,14 @@ export default function Events({ activeTab }) {
       <div className="eventsWrapper">
         {tempEvents.map((event, index) => (
           <div className="uniqueEventWrapper" key={index}>
-            {event}
+            <div className="eventHeader">
+              <div>{event.artistName}</div>
+              <div>{event.genre}</div>
+            </div>
+            <div className="eventBody">
+              <div>{event.liveCity}</div>
+              <div>{event.date}</div>
+            </div>
           </div>
         ))}
       </div>
